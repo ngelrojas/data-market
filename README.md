@@ -25,14 +25,18 @@
  - docker-compose exec db psql --username=myuser --dbname=mydatabase 
 ```
 
-### api to recover data market yfinance
+### api to recover data market yfinance(localhost)
 ```commandline
  http://127.0.0.1:9001/api/recovery?symbol=META&start_date=1990-01-01&end_date=2023-07-20 
 ```
 
 ### api to read data saved for the code above
 ```commandline
-
+http://127.0.0.1:9001/api/market
+body: {
+    "start_date": "2012-05-18",
+    "end_date": "2012-06-18"
+}
 
 ```
 
