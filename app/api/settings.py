@@ -42,14 +42,20 @@ LOCAL_APPS = [
 THRIDPARTY_APPS = [
     "rest_framework",
     "corsheaders",
+    "graphene_django",
 ]
 
 API_APPS = [
     "core",
     "market_yfi",
+    "graph",
 ]
 
 INSTALLED_APPS = LOCAL_APPS + THRIDPARTY_APPS + API_APPS
+
+GRAPHENE = {
+    "SCHEMA": "graph.schema.schema",
+}
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
