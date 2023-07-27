@@ -7,7 +7,7 @@ from core.models import Market
 class MarketType(DjangoObjectType):
     class Meta:
         model = Market
-        fields = ("date", "open", "high", "low", "close", "volume", "dividends", "stock_splits")
+        fields = ("date", "open", "high", "low", "close", "volume", "dividends", "stock_splits", "name")
 
 
 class Query(graphene.ObjectType):
@@ -18,20 +18,23 @@ class Query(graphene.ObjectType):
         end_date=graphene.Date(required=True),
         low=graphene.Float(),
         high=graphene.Float(),
+        name=graphene.String(),
         first=graphene.Int(),
-        page=graphene.Int(),
+        pages=graphene.Int(),
     )
 
-    def resolve_markets(self, info, first=None, page=None, **kwargs):
+    def resolve_markets(self, info, first=None, pages=None, **kwargs):
         queryset = Market.objects.all()
-        if page:
-            queryset = queryset[page:]
+        if pages:
+            queryset = queryset[pages:]
         if first:
             queryset = queryset[:first]
         return queryset
 
     def resolve_market_between_dates(
-            self, info, start_date, end_date, low=None, high=None, first=None, page=None
+            self, info, start_date, end_date,
+            low=None, high=None, name=None,
+            first=None, pages=None
     ):
         query_params = {
             'date__range': [start_date, end_date]
@@ -43,10 +46,13 @@ class Query(graphene.ObjectType):
         if high is not None:
             query_params['high__lte'] = high
 
+        if name is not None:
+            query_params['name'] = name
+
         queryset = Market.objects.filter(**query_params)
 
-        if page:
-            queryset = queryset[page:]
+        if pages:
+            queryset = queryset[pages:]
         if first:
             queryset = queryset[:first]
         return queryset

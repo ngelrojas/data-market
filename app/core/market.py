@@ -10,6 +10,7 @@ class Market(models.Model):
     volume = models.IntegerField(null=True)
     dividends = models.DecimalField(max_digits=12, decimal_places=2, null=True)
     stock_splits = models.DecimalField(max_digits=12, decimal_places=2, null=True)
+    name = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
         return self.id

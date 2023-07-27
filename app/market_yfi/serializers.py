@@ -7,7 +7,7 @@ class MarketSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Market
-        fields = ('date', 'open', 'high', 'low', 'close', 'volume', 'dividends', 'stock_splits')
+        fields = ('date', 'open', 'high', 'low', 'close', 'volume', 'dividends', 'stock_splits', 'name')
 
     def get_date(self, obj):
         return timezone.now()

@@ -19,8 +19,8 @@ class MarketYFIR(viewsets.ModelViewSet):
             "start_date": start_date,
             "end_date": end_date
         }
-        # self.retrieve_data_market(data_req)
-        self.save_data()
+        self.retrieve_data_market(data_req)
+        self.save_data(data_req.get('symbol'))
         return Response({
             'data': data_req,
         }, status=status.HTTP_200_OK)
@@ -31,8 +31,7 @@ class MarketYFIR(viewsets.ModelViewSet):
         _ext_data.data_file_name_yfi(data_req)
         return True
 
-    @staticmethod
-    def save_data():
+    def save_data(self, name):
         _data_market = MarketYFIQuery()
-        _data_market.saving_market_yfi()
+        _data_market.saving_market_yfi(name)
         return True

@@ -5,7 +5,7 @@ from core.market import Market
 
 class MarketYFIQuery:
 
-        def __save_market_yfi(self, data_row):
+        def __save_market_yfi(self, data_row, name):
             market = Market.objects.create(
                 date=data_row[0],
                 open=data_row[1],
@@ -14,7 +14,8 @@ class MarketYFIQuery:
                 close=data_row[4],
                 volume=data_row[5],
                 dividends=data_row[6],
-                stock_splits=data_row[7]
+                stock_splits=data_row[7],
+                name=name
             )
             return market
 
@@ -25,12 +26,12 @@ class MarketYFIQuery:
                 csv_file = _file
             return csv_file
 
-        def saving_market_yfi(self):
+        def saving_market_yfi(self, name):
             csv_file = self.__read_file_csv()
 
             with open(csv_file, 'r') as f:
                 reader = csv.reader(f, delimiter=',')
                 next(reader, None)
                 for row in reader:
-                    self.__save_market_yfi(row)
+                    self.__save_market_yfi(row, name)
             return True

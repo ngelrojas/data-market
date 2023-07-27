@@ -69,3 +69,11 @@ api python /usr/src/app/manage.py runserver 0.0.0.0:9001
 ```
 - docker-compose -f docker-compose.prod.yml logs -f
 ```
+
+### documentation api yfinance
+- https://github.com/ranaroussi/yfinance
+- https://python-yahoofinance.readthedocs.io/en/latest/api.html#
+
+
+### dashboard yfinances
+- https://finance.yahoo.com/quote/AAPL/balance-sheet

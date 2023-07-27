@@ -3,6 +3,6 @@
 .cot-env
 .cot-envdb
 backend
-.idea
+.idea/
 .vscode
 
