@@ -20,4 +20,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api-auth/", include("rest_framework.urls")),
     path("api/", include("market_yfi.urls")),
+    path("api/", include("gurus.urls")),
 ]

@@ -47,6 +47,7 @@ THRIDPARTY_APPS = [
 API_APPS = [
     "core",
     "market_yfi",
+    "gurus",
 ]
 
 INSTALLED_APPS = LOCAL_APPS + THRIDPARTY_APPS + API_APPS
