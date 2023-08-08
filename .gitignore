@@ -3,6 +3,7 @@
 .cot-env
 .cot-envdb
 backend
-.idea/
+.idea/*
+.idea/*.iml
 .vscode
 
