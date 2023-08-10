@@ -39,8 +39,6 @@ L
 app/gurus/config/__init__.py,1/4/14f1f57e21842558b364457076aac31fbc878f75
 D
 app/requirements.txt,b/a/bad0e8b06e94609c24277c5f7b6b72a912d964b3
-I
-app/gurus/tools/stocks.py,d/e/dea1010d2570d31175efed8b560150706da1f149
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -48,29 +46,39 @@ I
 0app/gurus/general_data/stock_list_in_exchange.py,6/7/67aafda4d3e02df1c105ca9f6926a32783ab8de6
 L
 app/gurus/config/base_url.py,d/2/d2f3366d0bbed3413495301b5575e037f827141d
-A
-app/gurus/urls.py,2/7/2797065e39c68e9efe3b1e83af9dcc31bbff9036
 X
 (app/gurus/mocks/stock_list_exchange.json,1/c/1c7b5b7705d39cecb95efaacc7309c9060d8b856
-C
-app/api/settings.py,9/4/943d39a9c90058de9fabb300145ad4f2e11f82ac
-B
-app/core/market.py,4/0/40e5cd001f41ff53a521ac86a05db06bf341a539
 R
 "app/market_yfi/extract_data_yfi.py,e/4/e4182cb36bf13b6206cfd1714d1fc7b686fbf316
-N
-app/market_yfi/market_views.py,d/3/d3c98340a8c01bbe007e8bc93e2dfd58fa9c10d5
 L
 app/gurus/services/stocks.py,8/e/8e34cb13c594b5af94608a73b70c09dbae8949f5
-Q
-!app/market_yfi/save_market_yfi.py,5/c/5cd2ec655bde43323edf2a96b50dce054845a55f
-B
-app/core/models.py,7/8/783da6f384d3fcbe7ecde6e89739f14c0a218923
-F
-app/core/stock_list.py,6/5/657cc0b862e6c05a1369be41d29fbb23325a9b1f
+C
+app/api/settings.py,9/4/943d39a9c90058de9fabb300145ad4f2e11f82ac
+A
+app/gurus/urls.py,2/7/2797065e39c68e9efe3b1e83af9dcc31bbff9036
+I
+app/gurus/tools/stocks.py,d/e/dea1010d2570d31175efed8b560150706da1f149
 Y
 )app/gurus/services/stock_list_exchange.py,6/7/670b8535ea0943be07d1a6e6c37f161aa1757e55
+Q
+!app/market_yfi/save_market_yfi.py,5/c/5cd2ec655bde43323edf2a96b50dce054845a55f
+G
+app/gurus/tools/tool.py,3/4/347bec03ef53c1f2f5c586c6f3f4c34aa4b5bbe0
+F
+app/core/stock_list.py,6/5/657cc0b862e6c05a1369be41d29fbb23325a9b1f
 V
 &app/gurus/query/stock_list_exchange.py,1/2/12b6947688eb5645a12db67c9ebb3cc6b859507f
+Y
+)app/gurus/mocks/stock_dividend_yield.json,0/6/06f3c31b9f58c4064ed2d9d2732a71c4c9108117
+B
+app/core/models.py,7/8/783da6f384d3fcbe7ecde6e89739f14c0a218923
+N
+app/market_yfi/market_views.py,d/3/d3c98340a8c01bbe007e8bc93e2dfd58fa9c10d5
+B
+app/core/market.py,4/0/40e5cd001f41ff53a521ac86a05db06bf341a539
+W
+'app/gurus/query/stock_dividend_yield.py,8/5/85ca6c3f3ea29e87705f7ba187b034e9324b4a8a
 B
 app/gurus/views.py,e/1/e173e26466b3a1defc8a1c22609a89d8b9557430
+P
+ app/core/stock_dividend_yield.py,1/2/123c9cf9d12067731b0a45cae8e0434f161d899d
