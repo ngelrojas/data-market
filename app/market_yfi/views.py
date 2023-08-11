@@ -19,7 +19,7 @@ class MarketYFIR(viewsets.ModelViewSet):
             "start_date": start_date,
             "end_date": end_date
         }
-        # self.retrieve_data_market(data_req)
+        self.retrieve_data_market(data_req)
         self.save_data()
         return Response({
             'data': data_req,

@@ -16,8 +16,8 @@ class StocksView(viewsets.ModelViewSet):
         _stock_dividend_yield_query = StockDividendYieldQuery()
         # _stock_list_exchange = get_list_exchange()
         _stock_list_exchange = get_dividend_yield()
-        for index in range(len(_stock_list_exchange)):
-            _stock_dividend_yield_query.save_stock_dividend_yield("", symbol, _stock_list_exchange[index][0], _stock_list_exchange[index][1])
+        # for index in range(len(_stock_list_exchange)):
+        #     _stock_dividend_yield_query.save_stock_dividend_yield("", symbol, _stock_list_exchange[index][0], _stock_list_exchange[index][1])
             # print("date", _stock_list_exchange[index][0])
             # print("yield", _stock_list_exchange[index][1])
 
