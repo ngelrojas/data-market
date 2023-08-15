@@ -1,10 +1,11 @@
 from datetime import date
+
 import yfinance as yf
 
 
 class Finance:
     today = date.today()
-    folder_name = './data_market/'
+    folder_name = "./data_market/"
 
     def __init__(self, symbol, start_date, end_date):
         self.symbol = symbol
@@ -18,10 +19,12 @@ class Finance:
         return data
 
     def _put_info_file_name(self, data):
-        data_file_name = f'{str(self.today)}_{self.start_date}_{self.end_date}_{self.symbol}'
+        data_file_name = (
+            f"{str(self.today)}_{self.start_date}_{self.end_date}_{self.symbol}"
+        )
         self._save_file_data(data, data_file_name)
         return True
 
     def _save_file_data(self, df, filename):
-        df.to_csv(self.folder_name + f'{filename}.csv')
+        df.to_csv(self.folder_name + f"{filename}.csv")
         return True

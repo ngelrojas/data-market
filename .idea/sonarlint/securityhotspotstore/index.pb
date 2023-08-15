@@ -15,8 +15,6 @@ M
 app/core/apps.py,9/5/95ffdfd87bec88dfc61ca905c4a5962171c992c9
 M
 app/gurus/tests/test_gurus.py,d/a/da050733c432c856ffd73ad2e3227e1172706a16
-?
-app/api/urls.py,d/6/d615c4ac666aeeb3ea69a2ce052f1d6c48ef32d9
 A
 app/gurus/apps.py,8/7/875a6cd3186205716cc8903f034663374cda35e7
 B
@@ -31,8 +29,6 @@ L
 app/gurus/config/__init__.py,1/4/14f1f57e21842558b364457076aac31fbc878f75
 L
 app/gurus/config/base_url.py,d/2/d2f3366d0bbed3413495301b5575e037f827141d
-D
-app/requirements.txt,b/a/bad0e8b06e94609c24277c5f7b6b72a912d964b3
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -48,3 +44,21 @@ G
 app/gurus/tools/tool.py,3/4/347bec03ef53c1f2f5c586c6f3f4c34aa4b5bbe0
 F
 app/core/stock_list.py,6/5/657cc0b862e6c05a1369be41d29fbb23325a9b1f
+L
+app/gurus/services/stocks.py,8/e/8e34cb13c594b5af94608a73b70c09dbae8949f5
+I
+app/gurus/tools/stocks.py,d/e/dea1010d2570d31175efed8b560150706da1f149
+Y
+)app/gurus/services/stock_list_exchange.py,6/7/670b8535ea0943be07d1a6e6c37f161aa1757e55
+G
+app/market_yfi/admin.py,b/1/b1609107778f680e68452070ed47e6389c9b1649
+F
+app/market_yfi/apps.py,d/b/dbfbf91b4927590d4b148b80a34622ad736b1c52
+N
+app/market_yfi/market_views.py,d/3/d3c98340a8c01bbe007e8bc93e2dfd58fa9c10d5
+m
+=app/data_market/2023-08-11_2023-08-08_2023-08-09_PETR4.SA.csv,f/1/f17d6a2fc24970626287b6ff044a7e95c565f191
+R
+"app/market_yfi/extract_data_yfi.py,e/4/e4182cb36bf13b6206cfd1714d1fc7b686fbf316
+Q
+!app/market_yfi/save_market_yfi.py,5/c/5cd2ec655bde43323edf2a96b50dce054845a55f

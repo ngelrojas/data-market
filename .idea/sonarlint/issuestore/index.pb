@@ -21,16 +21,12 @@ B
 app/gurus/admin.py,5/b/5bd6ac503be86747204774d36aeb22222381bf4a
 A
 app/core/admin.py,4/a/4a49d05f610b33bcfb98a682ea04ff46e10ac04f
-?
-app/api/urls.py,d/6/d615c4ac666aeeb3ea69a2ce052f1d6c48ef32d9
 N
 app/gurus/services/__init__.py,e/3/e35f2c9e2e0ed0da8ce2a5193089b0721469e3a3
 E
 app/gurus/__init__.py,6/e/6e62038e3cf73c1280f1d3e9ecec1219b68e3ada
 L
 app/gurus/config/__init__.py,1/4/14f1f57e21842558b364457076aac31fbc878f75
-D
-app/requirements.txt,b/a/bad0e8b06e94609c24277c5f7b6b72a912d964b3
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -48,3 +44,21 @@ V
 &app/gurus/query/stock_list_exchange.py,1/2/12b6947688eb5645a12db67c9ebb3cc6b859507f
 Y
 )app/gurus/mocks/stock_dividend_yield.json,0/6/06f3c31b9f58c4064ed2d9d2732a71c4c9108117
+L
+app/gurus/services/stocks.py,8/e/8e34cb13c594b5af94608a73b70c09dbae8949f5
+I
+app/gurus/tools/stocks.py,d/e/dea1010d2570d31175efed8b560150706da1f149
+Y
+)app/gurus/services/stock_list_exchange.py,6/7/670b8535ea0943be07d1a6e6c37f161aa1757e55
+G
+app/market_yfi/admin.py,b/1/b1609107778f680e68452070ed47e6389c9b1649
+F
+app/market_yfi/apps.py,d/b/dbfbf91b4927590d4b148b80a34622ad736b1c52
+m
+=app/data_market/2023-08-11_2023-08-08_2023-08-09_PETR4.SA.csv,f/1/f17d6a2fc24970626287b6ff044a7e95c565f191
+N
+app/market_yfi/market_views.py,d/3/d3c98340a8c01bbe007e8bc93e2dfd58fa9c10d5
+Q
+!app/market_yfi/save_market_yfi.py,5/c/5cd2ec655bde43323edf2a96b50dce054845a55f
+R
+"app/market_yfi/extract_data_yfi.py,e/4/e4182cb36bf13b6206cfd1714d1fc7b686fbf316

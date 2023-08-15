@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="enabledOnSave" value="true" />
+    <option name="sdkUUID" value="24d87eca-5a9d-42ae-b897-38729ba80c08" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (backend) (2)" project-jdk-type="Python SDK" />
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />
