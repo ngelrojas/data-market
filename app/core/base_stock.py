@@ -2,7 +2,7 @@ from django.db import models
 
 
 class BaseStock(models.Model):
-    date = models.DateTimeField(null=True)
+    date = models.DateField(null=True)
     open = models.DecimalField(max_digits=18, decimal_places=14, null=True)
     high = models.DecimalField(max_digits=18, decimal_places=2, null=True)
     low = models.DecimalField(max_digits=12, decimal_places=2, null=True)
@@ -13,4 +13,3 @@ class BaseStock(models.Model):
 
     class Meta:
         abstract = True
-        

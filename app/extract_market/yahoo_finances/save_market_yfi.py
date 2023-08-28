@@ -19,7 +19,7 @@ class MarketYFIQuery:
 
     def __read_file_csv(self):
         csv_file = ""
-        folder_path = pathlib.Path("./data_market/")
+        folder_path = pathlib.Path("./data_market/yf/")
         for _file in folder_path.iterdir():
             csv_file = _file
         return csv_file

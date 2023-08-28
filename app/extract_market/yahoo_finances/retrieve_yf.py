@@ -1,9 +1,8 @@
 from datetime import date
-
 import yfinance as yf
 
 
-class Finance:
+class RetrieveYF:
     today = date.today()
     folder_name = "./data_market/yf/"
 
@@ -19,7 +18,9 @@ class Finance:
         return data
 
     def _put_info_file_name(self, data):
-        data_file_name = f"quotation_{self.symbol}"
+        data_file_name = (
+            f"{str(self.today)}_{self.start_date}_{self.end_date}_{self.symbol}"
+        )
         self._save_file_data(data, data_file_name)
         return True
 

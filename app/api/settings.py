@@ -40,6 +40,7 @@ LOCAL_APPS = [
 ]
 
 THRIDPARTY_APPS = [
+    "graphene_django",
     "rest_framework",
     "corsheaders",
 ]
@@ -49,6 +50,7 @@ API_APPS = [
     "market_yfi",
     "gurus",
     "graph",
+    "extract_market",
 ]
 
 INSTALLED_APPS = LOCAL_APPS + THRIDPARTY_APPS + API_APPS
